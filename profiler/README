@@ -1,0 +1,13 @@
+This profiler is using the intel Pin DBI platform.
+
+First set the PIN_ROOT variable:
+
+  export PIN_ROOT=~/pin-3.17-98314-g0c048d619-gcc-linux
+
+Then compile the pintool:
+
+  make obj-intel64/profiler.so
+
+And then use it:
+
+  $PIN_ROOT/pin -t obj-intel64/profiler.so -- /bin/true
